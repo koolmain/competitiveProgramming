@@ -1,5 +1,7 @@
 package algorithms.dsasheet.lovebabbar.LinkedList;
 
+import static java.time.ZonedDateTime.now; 
+import java.time.*; import java.time.format.*;
 //https://450dsa.com/linked_list
 //https://practice.geeksforgeeks.org/problems/segregate-even-and-odd-nodes-in-a-linked-list5035/1
 public class SegregateOddNEvenNodes extends LinkedList {
@@ -39,16 +41,18 @@ public class SegregateOddNEvenNodes extends LinkedList {
     }
     
     public static void main(String[] args){
-        SegregateOddNEvenNodes ll = new SegregateOddNEvenNodes(); 
-        ll.addNode(17);
-        ll.addNode(15);
-        ll.addNode(8);
-        ll.addNode(9);
-        ll.addNode(2);
-        ll.addNode(4);
-        ll.addNode(6);
-        ll.printList(ll.head);
-        Node newHead = ll.segregate(ll.head); 
-        ll.printList(newHead);
+        // SegregateOddNEvenNodes ll = new SegregateOddNEvenNodes(); 
+        // ll.addNode(17);
+        // ll.addNode(15);
+        // ll.addNode(8);
+        // ll.addNode(9);
+        // ll.addNode(2);
+        // ll.addNode(4);
+        // ll.addNode(6);
+        // ll.printList(ll.head);
+        // Node newHead = ll.segregate(ll.head); 
+        // ll.printList(newHead);
+       // System.out.println(now(ZoneOffset.UTC).format(DateTimeFormatter.ISO_INSTANT)); 
+       System.out.println(now(ZoneOffset.UTC).format(DateTimeFormatter.ofPattern("YYYY-MM-DD'T'hh:mm:ss.s'T'ZD"))); 
     }
 }
