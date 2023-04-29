@@ -48,6 +48,7 @@ public class MinimizeHeight2 {
         int curMin = arr[0]; 
         int curMax = arr[n-1]; 
         for(int i=1; i<n; i++){
+            //to avoid negative values of a[i]-k if a[i] < k
             if(arr[i] < k) continue; 
             curMin = Math.min(arr[0]+k, arr[i]-k); 
             curMax = Math.max(arr[i-1]+k, arr[n-1]-k); 

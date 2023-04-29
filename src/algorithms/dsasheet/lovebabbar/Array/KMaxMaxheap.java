@@ -1,9 +1,5 @@
 package algorithms.dsasheet.lovebabbar.Array;
 
-import java.util.Arrays;
-
-import algorithms.category.graphs.minspanningtree.KruskalsMST;
-
 //implementing using max heap 
 public class KMaxMaxheap {
 
@@ -26,7 +22,7 @@ public class KMaxMaxheap {
             heapify(arr, N, i);
         }
 
-        for(int i = k; i< arr.length; i++){
+        for(int i = k + 1; i< arr.length; i++){
             if(arr[0] < arr[i]){
                 swap(arr, 0, i); 
                 heapify(arr, N, 0);
